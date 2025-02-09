@@ -9,7 +9,7 @@ function geoOK(position){
     .then((data) => {
         const weather =  document.querySelector("#weather span:nth-child(1)");
         const city =  document.querySelector("#weather span:nth-child(2)");
-        weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+        weather.innerText = `${data.weather[0].main} / ${data.main.temp}°C`;
         city.innerText = data.name;
     });
 }
