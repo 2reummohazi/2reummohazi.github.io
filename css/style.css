@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body{margin: 0;padding: 0;font-family: "Pretendard Variable", Pretendard;font-size: 1em;color: #fff;background: #000;text-align: center;line-height: 1.6em;}
+input, button{background: none;border: none;padding: 0;margin: 0;color: #fff;font-size: 1em;}
+ul, li{list-style: none;padding: 0;margin: 0;}
+a, a:visited, a:hover, a:focus{text-decoration: none;color: inherit;}
+
+.main{display: flex;flex-direction: column;justify-content: center;height: 100vh;height: 100svh;}
+.form_login input[type="text"]{padding: 12px 0;border-bottom: 1px solid rgba(255,255,255,0.8);font-size: 1.5em;text-align: center;}
+.form_login input[type="text"]::placeholder{color: rgba(255,255,255,0.5);}
+.form_login input[type="submit"]{width: 1px;height: 0;position: absolute;left: -99999px;font-size: 0;}
+.hidden{display: none;}
+
+h2{font-size: 3em;}
+
+.form_todo input{width: 60vw;min-width: 200px;max-width: 800px;padding: 10px 20px;text-align: center;background: rgba(255,255,255,0.1);border-radius: 4px;}
+.form_todo input::placeholder{color: rgba(255,255,255,0.5);}
+.list_todo{width: 60vw;min-width: 200px;max-width: 800px;margin: 20px auto;}
+.list_todo li{display: flex;flex-wrap: wrap;align-items: center;padding: 8px 0;gap: 8px;border-bottom: 1px solid rgba(255,255,255,0.1);}
+.list_todo li:before{display: inline-flex;width: 5px;height: 5px;content: "";background: rgba(255,255,255,0.5);border-radius: 100%;}
+.list_todo li span{display: block;max-width: calc(100% - 3em);overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.list_todo li button{margin: 0 0 0 auto;cursor: pointer;}
+
+.play_list p{font-size: 1.2em;font-style: italic;}
+.play_list a{display: inline-flex;padding: 8px 20px;background: rgba(255,255,255,0.1);border: 1px solid rgba(255,255,255,0.3);border-radius: 20px;line-height: 1;}
+.play_list a:hover, .play_list a:focus{background: rgba(255,255,255,0.5);}
+
+.bg_img{position: fixed;top: 0;bottom: 0;left: 0;right: 0;width: 100%;height: 100vh;object-fit: cover;z-index: -1;pointer-events: none;opacity: 0.3;filter: blur(3px);}
